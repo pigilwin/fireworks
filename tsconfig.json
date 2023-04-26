@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "./dist",
+        "module": "es6",
+        "target": "ESNext",
+        "noImplicitAny": true,
+        "outDir": "./dist",
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

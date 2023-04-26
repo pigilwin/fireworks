@@ -1,0 +1,38 @@
+{
+  "name": "fireworks",
+  "version": "1.0.0",
+  "description": "A library to load fireworks over the page",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config rollup.config.production.js",
+    "watch": "rollup --config rollup.config.development.js --watch",
+    "clean": "rm -rf dist && rm -rf .cache",
+    "lint": "eslint src/ --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pigilwin/fireworks.git"
+  },
+  "keywords": [
+    "fireworks"
+  ],
+  "author": "Tim Remnant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/pigilwin/fireworks/issues"
+  },
+  "homepage": "https://gitlab.com/pigilwin/fireworks#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "5.46.1",
+    "eslint": "8.19.0",
+    "rollup": "3.7.4",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^2.0.2",
+    "typescript": "^4.9.4"
+  }
+}
